@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FieldTableViewCell" rowHeight="98" id="KGk-i7-Jjw" customClass="FieldTableViewCell" customModule="CustomCells" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-Xb-jg1">
+                        <rect key="frame" x="5" y="5" width="361" height="88"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jGO-Xb-jg1" secondAttribute="trailing" constant="5" id="I4M-8b-eYG"/>
+                    <constraint firstItem="jGO-Xb-jg1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="SX1-AZ-M6H"/>
+                    <constraint firstAttribute="bottom" secondItem="jGO-Xb-jg1" secondAttribute="bottom" constant="5" id="cyZ-t4-Flh"/>
+                    <constraint firstItem="jGO-Xb-jg1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="f1v-8g-gln"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="field" destination="jGO-Xb-jg1" id="nJ6-3n-Qzt"/>
+            </connections>
+            <point key="canvasLocation" x="100.72463768115942" y="158.70535714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
